@@ -41,7 +41,8 @@ for i in test.readlines():
     blacklist[x1] = x1
 test.close()
 username = 'default'
-while (1):
+flag = -1
+while (flag != 1):
     while user[username].count < 3:
         username = input('Please input your ID: ')
         if username not in user.keys():
